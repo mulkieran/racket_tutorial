@@ -88,12 +88,15 @@ Ground Rules Reminder
 \end_layout
 
 \begin_layout Itemize
-Respectful and courteous behavior toward everyone in this room.
+You must be respectful and courteous toward everyone in this room.
 \end_layout
 
 \begin_layout Itemize
-Attention focused on functional programming with Dr.
- Racket.
+You must keep your attention focused on functional programming with Dr.
+\begin_inset space \space{}
+\end_inset
+
+Racket.
 \end_layout
 
 \begin_layout Itemize
@@ -118,6 +121,95 @@ Dr.
 \end_layout
 
 \begin_layout Section
+Expectations
+\end_layout
+
+\begin_layout Standard
+You will not write an amazing application today, but you will achieve some
+ pretty neat visual effects.
+ You will learn about a way of programming that is a little different from
+ what is most normal or typical and get a chance to experiment with it with
+ some guidance.
+ You will not get a complete introduction to Dr.
+\begin_inset space \space{}
+\end_inset
+
+Racket or functional programming, because this tutorial is only two hours
+ and two hours is not enough for a complete introduction.
+ But I hope the experience will be enough to open your minds to some pretty
+ subtle new ideas and to a hugely valuable way of thinking and programming.
+\end_layout
+
+\begin_layout Section
+Getting the Most Out of this Tutorial
+\end_layout
+
+\begin_layout Standard
+This tutorial is not a cookbook-style tutorial where you will follow the
+ same directions as every body else and, if you get it right, end up with
+ the same program at the end.
+ Simple Dr.
+\begin_inset space \space{}
+\end_inset
+
+Racket programs that do neat things are very easy to write.
+ So I will focus on teaching you just enough so that you can experiment
+ with existing programs, and come up with new and interesting variations
+ on these programs.
+ The format of the tutorial will be something like the following.
+\end_layout
+
+\begin_layout Standard
+First, I will show you a few things.
+ Do not feel that you have to follow along while I show you, I have tried
+ to put everything you need to know in this document.
+ After a short time, I'll stop and ask you to copy what I've done, and then
+ experiment a little on your own.
+ If you run into trouble, ask someone sitting near you for help.
+ If nobody near you can help, ask me.
+ Make sure to try out a few different things.
+ Eventually, I will ask you all to stop, and I'll explain to you what you
+ have done.
+ Then we'll go through the whole cycle again a few more times.
+\end_layout
+
+\begin_layout Standard
+There are some sections marked 
+\begin_inset Quotes eld
+\end_inset
+
+Extra
+\begin_inset Quotes erd
+\end_inset
+
+.
+ You do not need to do those to do the next part of the tutorial, but you
+ should feel free to do them if you have extra time.
+\end_layout
+
+\begin_layout Standard
+Do not try to copy and paste images or example Dr.
+\begin_inset space \space{}
+\end_inset
+
+Racket expressions from this document.
+ Type them in instead.
+ The Dr.
+\begin_inset space \space{}
+\end_inset
+
+Racket expressions in the document do not copy well to Dr.
+\begin_inset space \space{}
+\end_inset
+
+Racket and you will do better if you get the practice of typing them, anyway.
+\end_layout
+
+\begin_layout Part
+Let's Get Started
+\end_layout
+
+\begin_layout Section
 Getting Started
 \end_layout
 
@@ -127,7 +219,10 @@ Setup
 
 \begin_layout Standard
 Start Dr.
- Racket and make sure that your environment is set up correctly.
+\begin_inset space \space{}
+\end_inset
+
+Racket and make sure that your environment is set up correctly.
 \end_layout
 
 \begin_layout Enumerate
@@ -155,8 +250,8 @@ Preinstalled HtDP/2e Teachpacks
 \end_layout
 
 \begin_layout Standard
-If you see a yellow warning bar at the bottom your changes have not yet
- been applied.
+Hint: If you see a yellow warning bar at the bottom your changes have not
+ yet been applied.
  Press the 
 \begin_inset Quotes eld
 \end_inset
@@ -166,6 +261,24 @@ Run
 \end_inset
 
  button to apply your changes.
+\end_layout
+
+\begin_layout Standard
+When you are done, Dr.
+\begin_inset space \space{}
+\end_inset
+
+Racket should look something like this.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename docimages/screenshot1.png
+	scale 25
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -242,22 +355,27 @@ Extra!
 Next easiest are strings.
  Strings are just lists of characters.
  However, Dr.
- Racket needs some extra information to distinguish a string from other
- things.
+\begin_inset space \space{}
+\end_inset
+
+Racket needs some extra information to distinguish a string from other things.
  So that Dr.
- Racket can tell that you mean a list of characters, you must surround your
+\begin_inset space \space{}
+\end_inset
+
+Racket can tell that you mean a list of characters, you must surround your
  list of characters with a pair of double quotation marks, so
 \end_layout
 
 \begin_layout Standard
 \begin_inset listings
-lstparams "language=Lisp"
+lstparams "language=Lisp,showstringspaces=false"
 inline false
 status open
 
 \begin_layout Plain Layout
 
-"I am completely operational, and all my circuits are functioning perfectly."
+"I am an example string"
 \end_layout
 
 \end_inset
@@ -267,7 +385,10 @@ status open
 
 \begin_layout Standard
 means to Dr.
- Racket an 
+\begin_inset space \space{}
+\end_inset
+
+Racket an 
 \emph on
 I
 \emph default
@@ -281,7 +402,10 @@ m
 \emph default
 , and so forth.
  Dr.
- Racket displays a string value with surrounding quotation marks, so that
+\begin_inset space \space{}
+\end_inset
+
+Racket displays a string value with surrounding quotation marks, so that
  you will understand that the value is a string.
 \end_layout
 
@@ -994,6 +1118,71 @@ In a functional language, functions are values.
  other value, e.g., 0.
  This is true of all functional languages, even those that are not purely
  functional, because it is so very handy.
+\end_layout
+
+\begin_layout Part
+Next Steps
+\end_layout
+
+\begin_layout Standard
+Dr.
+\begin_inset space \space{}
+\end_inset
+
+Racket, along with lots of useful resources, is freely available online
+ at: 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://racket-lang.org/
+\end_layout
+
+\end_inset
+
+.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Realm of Racket
+\begin_inset Quotes erd
+\end_inset
+
+ is a Racket book with a focus on programming games and a website here:
+ 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://www.realmofracket.com/
+\end_layout
+
+\end_inset
+
+.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+How to Design Programs, Second Edition
+\begin_inset Quotes erd
+\end_inset
+
+ is a very complete work in progress with a website here: 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://www.ccs.neu.edu/home/matthias/HtDP2e/
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Part
