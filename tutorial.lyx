@@ -595,8 +595,7 @@ status open
 
 \begin_layout Standard
 You can construct many more shapes than this.
- The Racket Documentation, which is available from the Help menu, describes
- them all.
+ The Racket Documentation describes them all.
 \end_layout
 
 \begin_layout Standard
