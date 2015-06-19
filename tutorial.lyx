@@ -201,6 +201,11 @@ Racket expressions in the document do not copy well to Dr.
 Racket and you will do better if you get the practice of typing them, anyway.
 \end_layout
 
+\begin_layout Standard
+Make sure to save your files to your USB key before you move on to the next
+ step.
+\end_layout
+
 \begin_layout Part
 Let's Get Started
 \end_layout
@@ -770,7 +775,7 @@ There are only two lines in the file.Each of these lines is a
 definition
 \emph default
 .
- A definition assigns a name to a value.
+ A definition assigns a value to a name.
  Each definition starts with 
 \emph on
 define
@@ -798,6 +803,74 @@ Experiment with the other ways of writing complex image expressions in Dr.
  images.
  Besides scale, rotate, flip-horizontal, and flip-vertical are nice ways
  for writing expressions with a single image.
+\end_layout
+
+\begin_layout Standard
+Here are a few simple examples to get you started.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename sample-images/pinwheel1.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename sample-images/necker.png
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -1506,7 +1579,7 @@ Really Important Vocabulary
 \end_layout
 
 \begin_layout Description
-definition A definition is the assignment of a name to a value.
+definition A definition is the assignment of a value to a name.
 \end_layout
 
 \begin_layout Description
