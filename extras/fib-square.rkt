@@ -30,5 +30,7 @@
 
 (define fib-square
   (lambda (x)
-    (if (= x 0) unit-square
-        (make-square (fib-square (- x 1))))))
+    (if
+     (= x 0)
+     unit-square
+     (make-square (fib-square (- x 1))))))
