@@ -9,9 +9,9 @@
 (define rh4 (rotate 90 (beside rh3 rh3)))
 (define rh5 (overlay rh2 rh4))
 
-(define sq1 (square 100 "outline" "black"))
+(define sq1 (square 100 "outline" "blue"))
 (define faces (overlay/xy sq1 50 -30 sq1))
-(define conline (line 50 -30 "black"))
+(define conline (line 50 -30 "blue"))
 (define one-side (overlay/xy conline 0 0 faces))
 (define two-side (overlay/xy conline -100 0 one-side))
 (define three-side (overlay/xy conline -100 -100 two-side))
