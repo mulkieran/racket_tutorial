@@ -1,11 +1,18 @@
-;; The first three lines of this file were inserted by DrRacket. They record metadata
-;; about the language level of this file in a form that our tools can easily process.
-#reader(lib "htdp-intermediate-lambda-reader.ss" "lang")((modname fib-square) (read-case-sensitive #t) (teachpacks ((lib "image.rkt" "teachpack" "2htdp") (lib "universe.rkt" "teachpack" "2htdp"))) (htdp-settings #(#t constructor repeating-decimal #f #t none #f ((lib "image.rkt" "teachpack" "2htdp") (lib "universe.rkt" "teachpack" "2htdp")))))
+#lang racket
+
+(require 2htdp/image)
+(require 2htdp/universe)
+
+(define SQUARE_COLOR "chartreuse")
+
+(define background
+  (rectangle 1000 600 "solid" "black"))
+
 (define make-a-square
   (lambda (w)
     (overlay
      (square w "outline" "black")
-     (square w "solid" "chartreuse"))))
+     (square w "solid" SQUARE_COLOR))))
 
 (define spiral
   (lambda (s)
@@ -34,3 +41,9 @@
      (= x 0)
      unit-square
      (make-square (fib-square (- x 1))))))
+
+(big-bang
+ (fib-square 0)
+ (state true)
+ (on-key (lambda (w k) (make-square w)))
+ (to-draw (lambda (x) (overlay x background))))

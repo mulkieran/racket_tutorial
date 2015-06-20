@@ -4,7 +4,7 @@
 (require 2htdp/universe)
 
 (define CRAYON
-  (circle 5 "solid" "pink"))
+  (circle 10 "solid" "pink"))
 
 (define background
   (rectangle 500 300 "solid" "black"))
