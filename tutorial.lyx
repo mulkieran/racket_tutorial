@@ -227,23 +227,15 @@ Racket and make sure that your environment is set up correctly.
 \end_layout
 
 \begin_layout Enumerate
-Make sure that your language is set to 
-\begin_inset Quotes eld
-\end_inset
-
-Beginning Student
-\begin_inset Quotes erd
-\end_inset
-
-.
+Start a new file.
 \end_layout
 
 \begin_layout Enumerate
-Make sure that you have loaded all the 
+For your language, select 
 \begin_inset Quotes eld
 \end_inset
 
-Preinstalled HtDP/2e Teachpacks
+Intermediate Student with Lambda
 \begin_inset Quotes erd
 \end_inset
 
@@ -262,24 +254,6 @@ Run
 \end_inset
 
  button to apply your changes.
-\end_layout
-
-\begin_layout Standard
-When you are done, Dr.
-\begin_inset space \space{}
-\end_inset
-
-Racket should look something like this.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Graphics
-	filename docimages/screenshot1.png
-	scale 25
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsection
@@ -447,6 +421,44 @@ Racket displays a string value with surrounding quotation marks, so that
 
 \begin_layout Section
 Next Steps: Programming, i.e, evaluating
+\end_layout
+
+\begin_layout Subsection
+Importing Some Useful Libraries
+\end_layout
+
+\begin_layout Standard
+Add the following additional lines at the top of your Definitions Pane.
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Lisp"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+(require 2htdp/image)
+\end_layout
+
+\begin_layout Plain Layout
+
+(require 2htdp/universe)
+\end_layout
+
+\begin_layout Plain Layout
+
+(require 2htdp/planetcute)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+These are all libraries of useful names that you will find convenient.
 \end_layout
 
 \begin_layout Subsection
@@ -761,7 +773,7 @@ status open
 
 \begin_layout Standard
 .
- This value of this expression is a star ten times bigger than the value
+ The value of this expression is a star ten times bigger than the value
  of my-star.
 \end_layout
 
@@ -837,6 +849,7 @@ Here are a few simple examples to get you started.
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename sample-images/necker.png
+	scale 75
 
 \end_inset
 
@@ -851,6 +864,12 @@ Here are a few simple examples to get you started.
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Graphics
+	filename sample-images/game-scene.png
+	scale 50
+
+\end_inset
+
 
 \end_layout
 
@@ -860,6 +879,12 @@ Here are a few simple examples to get you started.
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Graphics
+	filename sample-images/dollar.png
+	scale 75
+
+\end_inset
+
 
 \end_layout
 
@@ -871,6 +896,11 @@ Here are a few simple examples to get you started.
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+For working with Planet Cute images, overlay/xy and beside/align are often
+ helpful.
 \end_layout
 
 \begin_layout Subsection
@@ -940,15 +970,6 @@ This part of the workshop is about very simple animations and the essential
 functions
 \emph default
 .
- For this, you must change your language to 
-\begin_inset Quotes eld
-\end_inset
-
-Intermediate Student with lambda
-\begin_inset Quotes erd
-\end_inset
-
-, and make sure that your teachpacks are all loaded again.
 \end_layout
 
 \begin_layout Section
@@ -1146,6 +1167,42 @@ my-animation.rkt
  You can make the size of the circle fluctuate in interesting ways using
  somewhat more complex arithmetic.
  You can change the type of shape that gets displayed.
+ You can use Planet Cute images instead of geometric shapes.
+\end_layout
+
+\begin_layout Section
+Getting Rid of Failing Tests
+\end_layout
+
+\begin_layout Standard
+If you change your animation substantially, your tests will probably fail.
+ If you get rid of the tests, your untested code will be highlighted in
+ yellow/black.
+ Use the 
+\begin_inset Quotes eld
+\end_inset
+
+Clear Error Highlights
+\begin_inset Quotes erd
+\end_inset
+
+ menu item to clear this, if it bothers you.
+ Eventually, you will wish to change your language to the full racket language.
+ You can do this by selecting the Racket language, and putting the line
+ 
+\begin_inset listings
+lstparams "language=Lisp"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+#lang racket
+\end_layout
+
+\end_inset
+
+ at the top of your file.
 \end_layout
 
 \begin_layout Section
